@@ -1,10 +1,4 @@
-import {
-  CardActionArea,
-  CardContent,
-  CardMedia,
-  Typography,
-  Card
-} from '@mui/material'
+import { Card, CardContent, CardMedia, Typography } from '@mui/material'
 
 const CardC = ({
   img,

@@ -95,9 +95,9 @@ export default function QtCreator({ title }: { title: string }) {
           height='315'
           src='https://www.youtube.com/embed/rKdqAEBoMtY?si=39B1SqcLz1QQ6eUa'
           title='YouTube video player'
-          frameborder='0'
+          // frameborder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          allowfullscreen
+          // allowfullscreen
         ></iframe>
         <Typography variant='h6' gutterBottom>
           Instalación y configuración de QtCreator

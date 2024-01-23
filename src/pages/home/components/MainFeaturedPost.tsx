@@ -1,22 +1,21 @@
-import * as React from 'react';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
-import Box from '@mui/material/Box';
+import Box from '@mui/material/Box'
+import Grid from '@mui/material/Grid'
+import Link from '@mui/material/Link'
+import Paper from '@mui/material/Paper'
+import Typography from '@mui/material/Typography'
 
 interface MainFeaturedPostProps {
   post: {
-    description: string;
-    image: string;
-    imageText: string;
-    linkText: string;
-    title: string;
-  };
+    description: string
+    image: string
+    imageText: string
+    linkText: string
+    title: string
+  }
 }
 
 export default function MainFeaturedPost(props: MainFeaturedPostProps) {
-  const { post } = props;
+  const { post } = props
 
   return (
     <Paper
@@ -28,11 +27,17 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        backgroundImage: `url(${post.image})`,
+        backgroundImage: `url(${post.image})`
       }}
     >
       {/* Increase the priority of the hero background image */}
-      {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
+      {
+        <img
+          style={{ display: 'none' }}
+          src={post.image}
+          alt={post.imageText}
+        />
+      }
       <Box
         sx={{
           position: 'absolute',
@@ -40,7 +45,7 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
           bottom: 0,
           right: 0,
           left: 0,
-          backgroundColor: 'rgba(0,0,0,.3)',
+          backgroundColor: 'rgba(0,0,0,.3)'
         }}
       />
       <Grid container>
@@ -49,21 +54,26 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
             sx={{
               position: 'relative',
               p: { xs: 3, md: 6 },
-              pr: { md: 0 },
+              pr: { md: 0 }
             }}
           >
-            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+            <Typography
+              component='h1'
+              variant='h3'
+              color='inherit'
+              gutterBottom
+            >
               {post.title}
             </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
+            <Typography variant='h5' color='inherit' paragraph>
               {post.description}
             </Typography>
-            <Link variant="subtitle1" href="#">
+            <Link variant='subtitle1' href='#'>
               {post.linkText}
             </Link>
           </Box>
         </Grid>
       </Grid>
     </Paper>
-  );
+  )
 }
