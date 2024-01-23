@@ -49,7 +49,7 @@ const sidebar = {
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme({})
 
-const Home = () => {
+export const Home = () => {
   return (
     <Grid container spacing={5} sx={{ mt: 3 }}>
       <Main title='Bienvenido' posts={texts} />
@@ -86,15 +86,24 @@ export default function Blog() {
                 <FeaturedPost key={index} post={post} />
               ))}
             </Grid> */}
-            <Route index element={<Home />} />
-            <Route path='c++' element={<CPP title='C++' />} />
+            <Route index path='/sitio-servicio' element={<Home />} />
+            <Route path='/sitio-servicio/c++' element={<CPP title='C++' />} />
             <Route
-              path='/qtcreator'
+              path='/sitio-servicio//qtcreator'
               element={<QtCreator title='QtCreator' />}
             />
-            <Route path='/cgal' element={<CGAL title='CGAL' />} />
-            <Route path='/freecad' element={<FreeCAD title='FreeCAD' />} />
-            <Route path='/onelab' element={<OneLab title='ONE Lab' />} />
+            <Route
+              path='/sitio-servicio/cgal'
+              element={<CGAL title='CGAL' />}
+            />
+            <Route
+              path='/sitio-servicio/freecad'
+              element={<FreeCAD title='FreeCAD' />}
+            />
+            <Route
+              path='/sitio-servicio/onelab'
+              element={<OneLab title='ONE Lab' />}
+            />
             <Route path='*' element={<NoMatch />} />
           </Routes>
         </main>
