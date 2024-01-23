@@ -17,6 +17,7 @@ import CGAL from '../CGAL/CGAL'
 import FreeCAD from '../FreeCAD/FreeCAD'
 import OneLab from '../OneLab/OneLab'
 
+// const path = '/sitio-servicio'
 const sections = [
   { title: 'Inicio', url: '/' },
   { title: 'C++', url: 'c++' },
@@ -86,7 +87,7 @@ export default function Blog() {
               ))}
             </Grid> */}
             <Route index element={<Home />} />
-            <Route path='/c++' element={<CPP title='C++' />} />
+            <Route path='c++' element={<CPP title='C++' />} />
             <Route
               path='/qtcreator'
               element={<QtCreator title='QtCreator' />}
