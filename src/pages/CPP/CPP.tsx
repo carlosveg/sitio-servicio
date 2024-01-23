@@ -73,9 +73,9 @@ export default function CPP({ title }: { title: string }) {
           height='315'
           src='https://www.youtube.com/embed/JruaQnzwkDQ?si=UEtZko3Lwd4I2dzR'
           title='YouTube video player'
-          frameborder='0'
+          // frameborder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          allowfullscreen
+          // allowfullscreen
         ></iframe>
         <Typography variant='h6' gutterBottom>
           Explicación del programa

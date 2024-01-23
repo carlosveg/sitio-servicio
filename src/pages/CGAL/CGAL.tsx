@@ -2,6 +2,7 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import XIcon from '@mui/icons-material/X'
 import { Divider, Grid, Typography } from '@mui/material'
+import Carousel from 'react-material-ui-carousel'
 import elefante from '../../assets/img/elefante.msh.png'
 import espiral_run from '../../assets/img/espiral_run.png'
 import example_clock from '../../assets/img/example_clock.png'
@@ -14,8 +15,6 @@ import heartCPP from '../../assets/resources/heart.cpp.txt'
 import skullCPP from '../../assets/resources/skull.cpp.txt'
 import Sidebar from '../home/components/Sidebar'
 import CardC from './components/Card'
-import ImageListC from './components/ImageListC'
-import Carousel from 'react-material-ui-carousel'
 
 const itemData = [
   {
