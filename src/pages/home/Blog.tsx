@@ -19,12 +19,12 @@ import OneLab from '../OneLab/OneLab'
 
 // const path = '/sitio-servicio'
 const sections = [
-  { title: 'Inicio', url: '/sitio-servicio/' },
-  { title: 'C++', url: '/sitio-servicio/c++' },
-  { title: 'QtCreator', url: '/sitio-servicio/qtcreator' },
-  { title: 'CGAL', url: '/sitio-servicio/cgal' },
-  { title: 'FREECAD', url: '/sitio-servicio/freecad' },
-  { title: 'ONE LAB', url: '/sitio-servicio/onelab' }
+  { title: 'Inicio', url: '/' },
+  { title: 'C++', url: '/c++' },
+  { title: 'QtCreator', url: '/qtcreator' },
+  { title: 'CGAL', url: '/cgal' },
+  { title: 'FREECAD', url: '/freecad' },
+  { title: 'ONE LAB', url: '/onelab' }
 ]
 
 const sidebar = {
@@ -86,24 +86,15 @@ export default function Blog() {
                 <FeaturedPost key={index} post={post} />
               ))}
             </Grid> */}
-            <Route index path='/sitio-servicio' element={<Home />} />
-            <Route path='/sitio-servicio/c++' element={<CPP title='C++' />} />
+            <Route index path='' element={<Home />} />
+            <Route path='/c++' element={<CPP title='C++' />} />
             <Route
-              path='/sitio-servicio/qtcreator'
+              path='/qtcreator'
               element={<QtCreator title='QtCreator' />}
             />
-            <Route
-              path='/sitio-servicio/cgal'
-              element={<CGAL title='CGAL' />}
-            />
-            <Route
-              path='/sitio-servicio/freecad'
-              element={<FreeCAD title='FreeCAD' />}
-            />
-            <Route
-              path='/sitio-servicio/onelab'
-              element={<OneLab title='ONE Lab' />}
-            />
+            <Route path='/cgal' element={<CGAL title='CGAL' />} />
+            <Route path='/freecad' element={<FreeCAD title='FreeCAD' />} />
+            <Route path='/onelab' element={<OneLab title='ONE Lab' />} />
             <Route path='*' element={<NoMatch />} />
           </Routes>
         </main>
