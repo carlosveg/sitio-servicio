@@ -4,20 +4,19 @@ import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { HashRouter } from 'react-router-dom'
+import { HashRouter, RouterProvider, createHashRouter } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
-// import { Home } from './pages/home/Blog.tsx'
+import Blog, { Home } from './pages/home/Blog.tsx'
+import CPP from './pages/CPP/CPP.tsx'
 
-// const router = createHashRouter([
-//   { path: '/', element: <Home /> },
-//   { path: '/c++' }
-// ])
+const router = createHashRouter([
+  { path: '/', element: <Blog /> },
+  { path: '/c++', element: <CPP title='CPP' /> }
+])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <HashRouter>
-      <App />
-    </HashRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 )
