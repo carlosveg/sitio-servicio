@@ -19,12 +19,12 @@ import OneLab from '../OneLab/OneLab'
 
 // const path = '/sitio-servicio'
 const sections = [
-  { title: 'Inicio', url: '/' },
-  { title: 'C++', url: 'c++' },
-  { title: 'QtCreator', url: 'qtcreator' },
-  { title: 'CGAL', url: 'cgal' },
-  { title: 'FREECAD', url: 'freecad' },
-  { title: 'ONE LAB', url: 'onelab' }
+  { title: 'Inicio', url: '/sitio-servicio/' },
+  { title: 'C++', url: '/sitio-servicio/c++' },
+  { title: 'QtCreator', url: '/sitio-servicio/qtcreator' },
+  { title: 'CGAL', url: '/sitio-servicio/cgal' },
+  { title: 'FREECAD', url: '/sitio-servicio/freecad' },
+  { title: 'ONE LAB', url: '/sitio-servicio/onelab' }
 ]
 
 const sidebar = {
@@ -89,7 +89,7 @@ export default function Blog() {
             <Route index path='/sitio-servicio' element={<Home />} />
             <Route path='/sitio-servicio/c++' element={<CPP title='C++' />} />
             <Route
-              path='/sitio-servicio//qtcreator'
+              path='/sitio-servicio/qtcreator'
               element={<QtCreator title='QtCreator' />}
             />
             <Route
